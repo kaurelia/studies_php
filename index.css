@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+form > * {
+  margin: 5px;
+}
+
+#original-link-input {
+  outline: 0;
+}
+
+#submit {
+  background-color: steelblue;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.not-visible {
+  display: none;
+}
+
+#generated-link-wrapper {
+}

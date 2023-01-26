@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <template id="form-template">
+      <form>
+        <label for="original-link-input"
+          >Wrzuć link a my go utniemy za Ciebie</label
+        >
+        <input
+          type="text"
+          id="original-link-input"
+          name="original-link-input"
+        />
+        <div id="submit">Submit</div>
+        <div id="generated-link-wrapper" class="not-visible">
+          Generated link:
+          <span id="generated-link"></span>
+        </div>
+      </form>
+    </template>
+    <template id="invalid-link-template">
+      <div>Niestety nie znaleźliśmy dopasowania w bazie danych</div>
+    </template>
+    <template id="waiting-template">
+      <div>Proszę czekać...</div>
+    </template>
+  </body>
+</html>
